@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    /* background-color: #cc6633; */
+    width: 990px;
+    min-height: 330px;
+    margin: auto;
+}
+
+#header {
+    background-color: #66aa99;
+    height: 100px;
+}
+
+#left-sidebar, #right-sidebar{
+    background-color: #cc88aa;
+    width: 200px;
+    height: 300px;
+    float: left;
+    margin: 5px 0;
+}
+
+#content {
+    background-color: #66cc33;
+    width: 580px;
+    height: 400px;
+    float: left;
+    margin: 5px;
+}
+
+#footer {
+    background-color: #000;
+    height: 45px;
+    clear: both;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
