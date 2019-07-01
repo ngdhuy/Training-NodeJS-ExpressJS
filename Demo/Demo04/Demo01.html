@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="AddNew()">Add new</button>
+    <input type="button" onclick="Delete()" value="Delete" />
+    <button type="button" onclick="DeleteAll()">Delete All</button>
+    
+    <div id="pos"></div>
+
+    <script type="text/javascript">
+        var i = 0;
+
+        function AddNew(){
+            var divNode = document.getElementById("pos");
+            var pNode = document.createElement("p");
+            var textNode = document.createTextNode((++i) + ". item");
+            pNode.appendChild(textNode);
+            divNode.appendChild(pNode);
+        }
+
+        function Delete(){
+            var divNode = document.getElementById("pos");
+            if(divNode.children.length > 0)
+            {
+                divNode.removeChild(divNode.lastChild);
+                i--;
+            }
+        }
+
+        function DeleteAll(){
+            var divNode = document.getElementById("pos");
+            divNode.innerHTML = "";
+        }
+        
+    </script>
+</body>
+</html>

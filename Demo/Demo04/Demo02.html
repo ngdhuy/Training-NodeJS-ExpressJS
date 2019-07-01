@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="InnerHTML()">InnerHTML</button>
+    <button type="button" onclick="InnerText()">InnerText</button>
+    <button type="button" onclick="OuterHTML()">OuterHTML</button>
+    <button type="button" onclick="OuterText()">OuterText</button>
+    
+    <div id="pos">
+        <b>Hello Mr Buoi</b>
+    </div>
+
+    <script type="text/javascript">
+        function InnerHTML(){
+            var divNode = document.getElementById("pos");
+            console.log(divNode);
+            divNode.innerHTML = "<i>Hello BOSS</i>";
+            console.log(divNode);
+        }
+
+        function InnerText(){
+            var divNode = document.getElementById("pos");
+            console.log(divNode);
+            divNode.innerText = "<i>Hello BOSS</i>";
+            console.log(divNode);
+        }
+
+        function OuterHTML(){
+            var divNode = document.getElementById("pos");
+            console.log(divNode);
+            divNode.outerHTML = "<i>Hello BOSS</i>";
+            console.log(divNode);
+        }
+
+        function OuterText(){
+            var divNode = document.getElementById("pos");
+            console.log(divNode);
+            divNode.outerText = "<i>Hello BOSS</i>";
+            console.log(divNode);
+        }
+    </script>
+</body>
+</html>
