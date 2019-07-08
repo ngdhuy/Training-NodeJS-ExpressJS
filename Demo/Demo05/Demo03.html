@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo jquery 03</title>
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 200px;
+            background-color: #cc3366;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="Show">Show</button>
+    <button type="button" id="Hidden">Hidden</button>
+    <button type="button" id="Fade-out">Fade-out</button>
+    <button type="button" id="Fade-in">Fade-in</button>
+    <button type="button" id="Toggle">Toggle</button>
+
+    <div></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        var x = ((Math.random() * 100) + 1);
+        var y = ((Math.random() * 100) + 1);
+
+        $(document).ready(function(){
+            $("#Show").click(function(){
+                $("div").show(300);
+            });
+            
+            $("#Hidden").click(function(){
+                $("div").hide(500);
+            });
+
+            $("#Fade-in").click(function(){
+                $("div").fadeIn(500);
+            });
+
+            $("#Fade-out").click(function(){
+                $("div").fadeOut(700);
+            });
+
+            $("#Toggle").click(function(){
+                $("div").toggle(200);
+            });
+
+            setInterval("Move()", 100);
+        });
+
+        function Move(){
+            $("div").css("margin-left", x++);
+            $("div").css("margin-right", y++);
+
+            console.log(x + " - " + y);
+        }
+    </script>
+</body>
+</html>

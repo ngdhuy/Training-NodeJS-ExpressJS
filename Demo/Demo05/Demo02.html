@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo jquery 02</title>
+    <style type="text/css">
+        .err{ color: #ff0000; }
+        .label{
+            display: inline-block;
+            width: 75px;
+            color: #8927ab;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://google.com" method="POST">
+        <div>
+            <span class="label">Username:</span>
+            <input type="text" id="us" name="us" />
+            <span class="err" id="errUS"></span>
+        </div>
+        <div>
+            <span class="label">Password:</span>
+            <input type="password" name="pw" />
+            <span class="err" id="errPW"></span>
+        </div>
+        <button>Sign In</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("form").submit(function(){
+                var flag = true;
+
+                // var us = $("#us").val();
+                var us = $("input[type=text]").val();
+                var pw = $("input[type=password]").val();
+
+                if(us === ""){
+                    $("#errUS").text("Username is not blank");
+                    $("input[type=text]").focus();
+                    flag = false;
+                } else {
+                    $("#errUS").text("");
+                }
+
+                if(pw === ""){
+                    $("#errPW").text("Password is not blank");
+                    $("input[type=password]").focus();
+                    flag = false;
+                } else {
+                    $("#errPW").text("");
+                }
+
+                return flag;
+            })
+        });
+    </script>
+</body>
+</html> 
