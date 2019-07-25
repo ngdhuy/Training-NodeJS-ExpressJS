@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="do col-md-3 col-sm-4 col-xm-12"></div>
+            <div class="xanh col-md-4 col-sm-4 col-xm-12"></div>
+            <div class="vang col-md-5 col-sm-4 col-xm-12"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <button type="button" class="btn btn-success">Click me</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                    <form class="form-horizontal">
+                            <fieldset>
+                            
+                            <!-- Form Name -->
+                            <legend>Form Name</legend>
+                            
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="textinput">Text Input</label>  
+                              <div class="col-md-4">
+                              <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+                              <span class="help-block">help</span>  
+                              </div>
+                            </div>
+                            
+                            <!-- Prepended text-->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="prependedtext">Prepended Text</label>
+                              <div class="col-md-4">
+                                <div class="input-group">
+                                  <span class="input-group-addon">prepend</span>
+                                  <input id="prependedtext" name="prependedtext" class="form-control" placeholder="placeholder" type="text">
+                                </div>
+                                <p class="help-block">help</p>
+                              </div>
+                            </div>
+                            
+                            <!-- Prepended checkbox -->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="prependedcheckbox">Prepended Checkbox</label>
+                              <div class="col-md-4">
+                                <div class="input-group">
+                                  <span class="input-group-addon">     
+                                      <input type="checkbox">     
+                                  </span>
+                                  <input id="prependedcheckbox" name="prependedcheckbox" class="form-control" type="text" placeholder="placeholder">
+                                </div>
+                                <p class="help-block">help</p>
+                              </div>
+                            </div>
+                            
+                            <!-- Multiple Radios (inline) -->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="radios">Inline Radios</label>
+                              <div class="col-md-4"> 
+                                <label class="radio-inline" for="radios-0">
+                                  <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                                  1
+                                </label> 
+                                <label class="radio-inline" for="radios-1">
+                                  <input type="radio" name="radios" id="radios-1" value="2">
+                                  2
+                                </label> 
+                                <label class="radio-inline" for="radios-2">
+                                  <input type="radio" name="radios" id="radios-2" value="3">
+                                  3
+                                </label> 
+                                <label class="radio-inline" for="radios-3">
+                                  <input type="radio" name="radios" id="radios-3" value="4">
+                                  4
+                                </label>
+                              </div>
+                            </div>
+                            
+                            <!-- Select Basic -->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
+                              <div class="col-md-4">
+                                <select id="selectbasic" name="selectbasic" class="form-control">
+                                  <option value="1">Option one</option>
+                                  <option value="2">Option two</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <!-- File Button --> 
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="filebutton">File Button</label>
+                              <div class="col-md-4">
+                                <input id="filebutton" name="filebutton" class="input-file" type="file">
+                              </div>
+                            </div>
+                            
+                            <!-- Button (Double) -->
+                            <div class="form-group">
+                              <label class="col-md-4 control-label" for="button1id">Double Button</label>
+                              <div class="col-md-8">
+                                <button id="button1id" name="button1id" class="btn btn-success">Good Button</button>
+                                <button id="button2id" name="button2id" class="btn btn-danger">Scary Button</button>
+                              </div>
+                            </div>
+                            
+                            </fieldset>
+                            </form>                            
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

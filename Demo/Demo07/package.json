@@ -1,0 +1,19 @@
+{
+  "name": "demo_nodejs",
+  "version": "1.0.0",
+  "description": "Demo NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "ExpressJS"
+  ],
+  "author": "NDHuy",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  }
+}
