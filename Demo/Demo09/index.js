@@ -22,7 +22,7 @@ app.get('/readfile', (req, res) => {
         } else {
             console.log(err)
         }
-    });
+    })
 })
 
 
